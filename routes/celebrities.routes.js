@@ -7,8 +7,11 @@ router.get("/celebrities/create", (req, res) => {
     res.render("celebrities/new-celebrity");
 });
 
-router.post("/celebrities/create", (req, res) => {
+router.post("/celebrities/create", async (req, res) => {
     const data = req.body;
+    res.send(data);
+    //Celebrity.create()
+
     
 });
 
